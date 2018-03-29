@@ -12,8 +12,10 @@ function resolve (dir) {
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
+  //多页面
   entry: {
-    app: './src/main.js'
+    app: './src/main.js',
+    one: './src/js/one.js'
   },
   output: {
     path: config.build.assetsRoot,
